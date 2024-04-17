@@ -9,7 +9,7 @@
   //padding: 14px 0 10px 36px;
 
   @media screen and (max-width: 767px) {
-    padding: 14px 0 10px 0;
+    //padding: 14px 0 10px 0;
     width: 100%;
   }
 
@@ -53,7 +53,7 @@
       width: 28px;
       height: 28px;
 
-      border: 1.5px solid #000000;
+      border: 1.5px solid #ffffff;
 
       transition: border 0.3s ease;
 
@@ -79,7 +79,7 @@
       width: 28px;
       height: 28px;
 
-      border: 1px solid #000000;
+      border: 1px solid #ffffff;
       border-radius: 50%;
 
       transition: border 0.3s ease;
@@ -102,7 +102,7 @@
   }
 
   input:checked + .custom-toggle__icon {
-    border: 1.5px solid #000000;
+    border: 1.5px solid #ffffff;
     background-image: url('../../img/svg/tick.svg');
       background-position: center;
       background-repeat: no-repeat;

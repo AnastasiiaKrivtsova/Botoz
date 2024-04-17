@@ -1,7 +1,8 @@
 .general-button {
   //display: grid;
   //align-items: center;
-  margin-left: 140px;
+  display: block;
+  margin: 0 auto;
   padding: 3px 3px 3px 29px;
 
   color: $color-light-blue;

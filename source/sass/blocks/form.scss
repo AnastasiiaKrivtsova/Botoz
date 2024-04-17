@@ -7,6 +7,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 .form__title {
@@ -16,6 +21,10 @@
   color: $color-default-white;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @include vp-1023 {
+    text-align: center;
+  }
 
   @include vp-767 {
     font-size: 30px;
@@ -29,6 +38,10 @@
   color: $color-default-white;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @include vp-1023 {
+    text-align: center;
+  }
 
   @include vp-767 {
     font-size: 16px;
@@ -58,27 +71,14 @@
   position: relative;
 }
 
-.form__inner-img img {
-  position: absolute;
-  height: auto;
-  right: 0;
-  z-index: 2;
-  object-fit: cover;
-  bottom: -280px;
-  width: 100%;
-  max-width: 686px;
-  bottom: 0;
-
-  @include vp-767 {
-width: 300px;
-height: 300px;
-  };
-}
-
 .form__inner-wrapper-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+.form__inner-wrapper {
+  margin-bottom: 30px;
 }
 
 .form__input {
@@ -88,7 +88,7 @@ height: 300px;
   flex-direction: column-reverse;
   width: 100%;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 0;
   padding: 0;
 
   font-style: normal;
@@ -426,6 +426,10 @@ height: 300px;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   margin-left: 10px;
+
+  @include vp-1023 {
+    justify-items: center;
+  }
 }
 
 .form__checkbox {
@@ -446,7 +450,7 @@ height: 300px;
   }
 
   @media (min-width: 321px) and (max-width: 767px) {
-    padding-left: 25%;
+   // padding-left: 25%;
   }
 }
 
@@ -583,4 +587,24 @@ height: 300px;
   font-size: 14px;
   line-height: 14px;
   color: $color-alabaster;
+}
+
+.form__inner-img {
+  position: relative;
+}
+
+.form__inner-img img {
+  position: absolute;
+  height: auto;
+  right: 0;
+  z-index: 2;
+  object-fit: cover;
+  bottom: -280px;
+  width: 100%;
+  max-width: 686px;
+  bottom: 0;
+
+  @include vp-1023 {
+    display: none
+  };
 }
