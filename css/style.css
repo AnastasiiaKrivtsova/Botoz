@@ -639,6 +639,8 @@ button,
   margin: 0 auto;
   padding: 0 0 0 70px;
   background-image: linear-gradient(200deg, #5413a7 0%, #9c55f5 75%);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .header {
@@ -887,105 +889,6 @@ button,
   color: rgba(240, 239, 233, 0.8);
 }
 
-.form__select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-  width: 100%;
-  margin: 0;
-  padding: 0 0 12px;
-}
-
-.is-open .form__button-select {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.form__select-list {
-  max-height: 182px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-}
-
-.form__select-item {
-  padding: 17px 20px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #484848;
-}
-
-.form__select-item:hover:not(.focus-visible) {
-  color: #ffffff;
-  background-color: #316dc2;
-}
-
-.form__select p {
-  display: block;
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: start;
-  color: rgba(240, 239, 233, 0.8);
-}
-
-.form__button-select {
-  min-height: 50px;
-  padding: 10px 20px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #484848;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.form__button-select:hover {
-  border: 1px solid #000000;
-}
-
-.form__button-select:focus {
-  border: 1px solid #000000;
-}
-
-.form__button-select:focus-visible {
-  border: 1px solid #000000;
-}
-
-.form__button-select:active {
-  border: 1px solid #000000;
-}
-
-.form__button-select:hover + p {
-  color: #f0efe9;
-}
-
-.form__button-select:focus + p {
-  color: #f0efe9;
-}
-
-.form__button-select:focus-visible + p {
-  color: #f0efe9;
-}
-
-.form__button-select:active + p {
-  color: #f0efe9;
-}
-
-.form__select-icon {
-  width: 14px;
-  height: 7px;
-  background-color: #000000;
-}
-
 .form__checkbox-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1136,15 +1039,13 @@ button,
 }
 
 .form__inner-img img {
-  position: absolute;
+  position: fixed;
   height: auto;
   right: 0;
   z-index: 2;
   -o-object-fit: cover;
   object-fit: cover;
-  bottom: -280px;
-  width: 100%;
-  max-width: 686px;
+  max-width: 100%;
   bottom: 0;
 }
 
@@ -2071,36 +1972,7 @@ button,
   }
 }
 
-@media (max-width: 1199px) {
-  .form__wrapprer {
-    padding: 97px 45px 30px 45px;
-  }
-
-  .form__input {
-    margin-bottom: 15px;
-  }
-
-  .form__input label {
-    margin-bottom: 7px;
-    line-height: 20px;
-  }
-
-  .form__textarea {
-    margin-bottom: 17px;
-  }
-
-  .form__textarea p {
-    margin-bottom: 6px;
-    line-height: 20px;
-  }
-
-  .form__select p {
-    margin-bottom: 6px;
-    line-height: 20px;
-  }
-}
-
-@media (max-width: 1023px) {
+@media (max-width: 1230px) {
   .container {
     padding: 0 70px;
   }
@@ -2119,12 +1991,50 @@ button,
     text-align: center;
   }
 
+  .form__input {
+    margin-bottom: 15px;
+  }
+
+  .form__input label {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .form__input input {
+    padding: 16px 25px;
+  }
+
+  .form__textarea {
+    margin-bottom: 17px;
+  }
+
   .form__checkbox-wrapper {
     justify-items: center;
   }
 
+  .form__button {
+    width: 100%;
+  }
+
   .form__inner-img img {
     display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .form__wrapprer {
+    padding: 97px 45px 30px 45px;
+  }
+
+  .form__input label {
+    margin-bottom: 7px;
+    line-height: 20px;
+  }
+
+  .form__textarea p {
+    margin-bottom: 6px;
+    line-height: 20px;
   }
 }
 
@@ -2145,16 +2055,6 @@ button,
     margin-bottom: 20px;
   }
 
-  .form__input label {
-    margin-bottom: 12px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .form__input input {
-    padding: 16px 25px;
-  }
-
   .form__textarea {
     margin-bottom: 21px;
   }
@@ -2172,16 +2072,6 @@ button,
     line-height: 14px;
   }
 
-  .form__select p {
-    margin-bottom: 11px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .form__button-select {
-    min-height: 50px;
-  }
-
   .form__checkbox:last-of-type {
     margin-top: 0;
     margin-bottom: 12px;
@@ -2190,10 +2080,6 @@ button,
   .custom-toggle--checkbox .form__toggle-icon,
   .custom-toggle--radio .form__toggle-icon {
     top: 12px;
-  }
-
-  .form__button {
-    width: 100%;
   }
 
   .general-button {
