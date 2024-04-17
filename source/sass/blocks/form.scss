@@ -330,10 +330,6 @@
     margin-top: 0;
     margin-bottom: 12px;
   }
-
-  @media (min-width: 321px) and (max-width: 767px) {
-   // padding-left: 25%;
-  }
 }
 
 .form__checkbox-label {
@@ -480,12 +476,11 @@
   height: auto;
   right: 0;
   z-index: 2;
-  -o-object-fit: cover;
   object-fit: cover;
   max-width: 100%;
   bottom: 0;
 
   @media (max-width: 1230px) {
-    display: none
-  };
+    display: none;
+  }
 }
