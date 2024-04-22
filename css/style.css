@@ -1581,7 +1581,7 @@ button,
 .general-button {
   display: block;
   margin: 0 auto;
-  padding: 3px 3px 3px 29px;
+  padding: 20px 30px;
   color: #316dc2;
   word-break: break-all;
   background-color: #000000;
@@ -1787,6 +1787,7 @@ button,
 
 .footer {
   background-image: linear-gradient(200deg, #5413a7 0%, #9c55f5 75%);
+  color: beige;
 }
 
 .modal {
@@ -2082,7 +2083,7 @@ button,
 
   .general-button {
     width: 100%;
-    padding: 3px 3px 3px 19px;
+    padding: 20px 30px;
     gap: 19px;
     -ms-grid-columns: 1fr 34px;
     grid-template-columns: 1fr 34px;
@@ -2179,6 +2180,30 @@ button,
 
   .custom-toggle {
     width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .form__inner-wrapper-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form__input {
+    margin-bottom: 10px;
+  }
+
+  .form__checkbox-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+
+  .custom-input,
+  .custom-textarea {
+    padding: 14px 0 10px;
   }
 }
 
