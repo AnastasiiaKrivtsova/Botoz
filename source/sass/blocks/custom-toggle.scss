@@ -95,12 +95,12 @@
 
   input:checked + .custom-toggle__icon {
     border: 1.5px solid #ffffff;
-    background-image: url("../../img/svg/tick.svg");
+      background: url("../img/svg/tick.svg");
       background-position: center;
       background-repeat: no-repeat;
 
     &::before {
-      background-image: url("../../img/svg/tick.svg");
+      background: url("../img/svg/tick.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -119,4 +119,9 @@
       color: #15ab07;
     }
   }
+}
+
+.custom-toggle__svg {
+  fill: $color-default-black;
+  color: $color-default-black;
 }

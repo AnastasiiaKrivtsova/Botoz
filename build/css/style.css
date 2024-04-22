@@ -1585,12 +1585,12 @@ button,
 }
 .custom-toggle input:checked + .custom-toggle__icon {
   border: 1.5px solid #ffffff;
-  background-image: url("../../img/svg/tick.svg");
+  background: url("../img/svg/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 .custom-toggle input:checked + .custom-toggle__icon::before {
-  background-image: url("../../img/svg/tick.svg");
+  background: url("../img/svg/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1604,6 +1604,11 @@ button,
 }
 .custom-toggle .input-message.is-valid {
   color: #15ab07;
+}
+
+.custom-toggle__svg {
+  fill: #000000;
+  color: #000000;
 }
 
 .general-button {
