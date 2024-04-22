@@ -75,6 +75,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 .form__inner-wrapper {
@@ -103,6 +108,10 @@
 
   @include vp-767 {
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 540px) {
+   margin-bottom: 10px;
   }
 }
 
@@ -311,6 +320,12 @@
 
   @media (max-width: 1230px) {
     justify-items: center;
+  }
+
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 20px;
   }
 }
 

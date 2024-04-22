@@ -3,7 +3,7 @@
   //align-items: center;
   display: block;
   margin: 0 auto;
-  padding: 3px 3px 3px 29px;
+  padding: 20px 30px;
 
   color: $color-light-blue;
   word-break: break-all;
@@ -20,7 +20,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 3px 3px 3px 19px;
+    padding: 20px 30px;
 
     gap: 19px;
     grid-template-columns: 1fr 34px;
