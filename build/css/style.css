@@ -603,28 +603,100 @@ button,
 @media (max-width: 767px) {
   .form__title {
     font-size: 26px;
-    margin-bottom: 7px;
+    margin-bottom: 17px;
   }
 }
 
+.form__link:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  /* Другие стили */
+}
+
 .form__link {
-  padding: 15px;
+  padding: 13px;
   border: 1px solid #000000;
   background-color: transparent;
   border-radius: 20px;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+}
+.form__link:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+}
+.form__link:focus {
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+  color: #ffffff;
+}
+.form__link:focus-visible {
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+  color: #ffffff;
+}
+.form__link:active {
+  color: #ffffff;
+  fill: #ffffff;
+  border: 1px solid #ffffff;
+}
+.form__link .form__link-text:hover {
+  color: #ffffff;
+}
+.form__link .form__link-text:focus {
+  color: #ffffff;
+}
+.form__link .form__link-text:focus-visible {
+  color: #ffffff;
+}
+.form__link .form__link-text:active {
+  color: #ffffff;
+}
+.form__link .form__link-icon:hover {
+  fill: #ffffff;
+  color: #ffffff;
+}
+.form__link .form__link-icon:focus {
+  fill: #ffffff;
+}
+.form__link .form__link-icon:focus-visible {
+  fill: #ffffff;
+}
+.form__link .form__link-icon:active {
+  fill: #ffffff;
 }
 
 .form__link-icon {
   fill: #000000;
-  background: url("../img/svg/telegram.svg");
   background-position: center;
   background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  display: block;
+}
+.form__link-icon:hover {
+  fill: #ffffff;
+  color: #ffffff;
+}
+.form__link-icon:focus {
+  fill: #ffffff;
+}
+.form__link-icon:focus-visible {
+  fill: #ffffff;
+}
+.form__link-icon:active {
+  fill: #ffffff;
 }
 
 .form__link-text {
   font-size: 18px;
   color: #000000;
   font-weight: 400;
+  padding-left: 35px;
 }
 
 .form__text {
