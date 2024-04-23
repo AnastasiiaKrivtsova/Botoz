@@ -32,39 +32,47 @@
   }
 }
 
-.form__link:hover {
-  color: $color-default-white;
-  border: 1px solid $color-default-white;
-  background-color: $color-default-white;
-  /* Другие стили */
-}
-
 .form__link {
   padding: 13px;
   border: 1px solid $color-default-black;
   background-color: transparent;
   border-radius: 20px;
   display: block;
-  margin-bottom: 15px;
   position: relative;
+  max-width: 340px;
 
+  @media (max-width: 1230px){
+    margin: 0 auto;
+  }
 
   &:hover {
     color: $color-default-white;
     border: 1px solid $color-default-white;
-    fill: $color-default-white;
+    //fill: $color-default-white;
+
+    .form__link-text {
+      color: $color-default-white;
+    }
   }
 
   &:focus {
     border: 1px solid $color-default-white;
     fill: $color-default-white;
     color: $color-default-white;
+
+    .form__link-text {
+      color: $color-default-white;
+    }
   }
 
   &:focus-visible {
     border: 1px solid $color-default-white;
     fill: $color-default-white;
     color: $color-default-white;
+
+    .form__link-text {
+      color: $color-default-white;
+    }
   }
 
   &:active {
@@ -72,22 +80,8 @@
     fill: $color-default-white;
 
     border: 1px solid $color-default-white;
-  }
 
-  .form__link-text {
-    &:hover {
-      color: $color-default-white;
-    }
-
-    &:focus {
-      color: $color-default-white;
-    }
-
-    &:focus-visible {
-      color: $color-default-white;
-    }
-
-    &:active {
+    .form__link-text {
       color: $color-default-white;
     }
   }
@@ -144,6 +138,7 @@
   color: $color-default-black;
   font-weight: 400;
   padding-left: 35px;
+  margin: 0;
 }
 
 .form__text {
@@ -151,7 +146,7 @@
   font-weight: 400;
   line-height: normal;
   color: $color-default-white;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 20px;
 
   @media (max-width: 1230px) {

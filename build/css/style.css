@@ -607,30 +607,33 @@ button,
   }
 }
 
-.form__link:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
-  /* Другие стили */
-}
-
 .form__link {
   padding: 13px;
   border: 1px solid #000000;
   background-color: transparent;
   border-radius: 20px;
   display: block;
-  margin-bottom: 15px;
   position: relative;
+  max-width: 340px;
+}
+@media (max-width: 1230px) {
+  .form__link {
+    margin: 0 auto;
+  }
 }
 .form__link:hover {
   color: #ffffff;
   border: 1px solid #ffffff;
-  fill: #ffffff;
+}
+.form__link:hover .form__link-text {
+  color: #ffffff;
 }
 .form__link:focus {
   border: 1px solid #ffffff;
   fill: #ffffff;
+  color: #ffffff;
+}
+.form__link:focus .form__link-text {
   color: #ffffff;
 }
 .form__link:focus-visible {
@@ -638,21 +641,15 @@ button,
   fill: #ffffff;
   color: #ffffff;
 }
+.form__link:focus-visible .form__link-text {
+  color: #ffffff;
+}
 .form__link:active {
   color: #ffffff;
   fill: #ffffff;
   border: 1px solid #ffffff;
 }
-.form__link .form__link-text:hover {
-  color: #ffffff;
-}
-.form__link .form__link-text:focus {
-  color: #ffffff;
-}
-.form__link .form__link-text:focus-visible {
-  color: #ffffff;
-}
-.form__link .form__link-text:active {
+.form__link:active .form__link-text {
   color: #ffffff;
 }
 .form__link .form__link-icon:hover {
@@ -697,6 +694,7 @@ button,
   color: #000000;
   font-weight: 400;
   padding-left: 35px;
+  margin: 0;
 }
 
 .form__text {
@@ -704,7 +702,7 @@ button,
   font-weight: 400;
   line-height: normal;
   color: #ffffff;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 @media (max-width: 1230px) {
