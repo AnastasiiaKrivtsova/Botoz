@@ -642,9 +642,9 @@ button,
 }
 
 .header__logo-link {
-  font-size: 42px;
+  font-size: 26px;
   font-weight: 800;
-  color: #ffffff;
+  color: #000000;
 }
 
 .form {
@@ -666,6 +666,114 @@ button,
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.form__link:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  /* Другие стили */
+}
+
+.form__link {
+  padding: 13px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  border-radius: 20px;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form__link:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+}
+
+.form__link:focus {
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.form__link:focus-visible {
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.form__link:active {
+  color: #ffffff;
+  fill: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.form__link .form__link-text:hover {
+  color: #ffffff;
+}
+
+.form__link .form__link-text:focus {
+  color: #ffffff;
+}
+
+.form__link .form__link-text:focus-visible {
+  color: #ffffff;
+}
+
+.form__link .form__link-text:active {
+  color: #ffffff;
+}
+
+.form__link .form__link-icon:hover {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.form__link .form__link-icon:focus {
+  fill: #ffffff;
+}
+
+.form__link .form__link-icon:focus-visible {
+  fill: #ffffff;
+}
+
+.form__link .form__link-icon:active {
+  fill: #ffffff;
+}
+
+.form__link-icon {
+  fill: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  display: block;
+}
+
+.form__link-icon:hover {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.form__link-icon:focus {
+  fill: #ffffff;
+}
+
+.form__link-icon:focus-visible {
+  fill: #ffffff;
+}
+
+.form__link-icon:active {
+  fill: #ffffff;
+}
+
+.form__link-text {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+  padding-left: 35px;
 }
 
 .form__text {
@@ -2039,11 +2147,13 @@ button,
 
 @media (max-width: 767px) {
   .form__title {
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 17px;
   }
 
   .form__text {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 7px;
   }
 
   .form__wrapprer {
@@ -2184,6 +2294,10 @@ button,
 }
 
 @media (max-width: 540px) {
+  .container {
+    padding: 0 30px;
+  }
+
   .form__inner-wrapper-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2191,7 +2305,7 @@ button,
   }
 
   .form__input {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .form__checkbox-wrapper {
